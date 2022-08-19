@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
     
-      - name: Get Pokemon name
+      - name: Run the custom action, get Pokemon name
         uses: ./ # Uses an action in the root directory
         id: pokemon
         with:

@@ -1,5 +1,5 @@
 ---
-name: "My github action test"
+name: "My github action test"  # name of theaction
 description: "Call an API and get the result, for the time being"
 
 inputs:  # input parameters we can pass into a bash scripp
