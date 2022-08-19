@@ -1,0 +1,19 @@
+---
+name: "My github action test"
+description: "Call an API and get the result, for the time being"
+
+inputs:  # input parameters we can pass into a bash scripp
+  pokemon_id: # accesses through $INPUT_POKEMON_ID ($INPUT_...)
+    description: "number of the pokemon in the pokedex"
+    required: true
+    default: "1"
+
+outputs: # output params we can use later in another workflow
+  pokemon_name:
+    description: "Name des Pokemons"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.pokemon_id }}
