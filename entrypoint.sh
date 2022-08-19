@@ -8,5 +8,6 @@ pokemon_name=$(curl "${api_url}" | jq ".name")
 echo $pokemon_name
 
 echo "a"
-echo "::set-output name=pokemon_name::$pokemon_name"
+## This will print nothing. This is GitHub specific syntax
+echo "::set-output name=pokemon_name::$pokemon_name"()
 echo "b"
