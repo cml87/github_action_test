@@ -9,5 +9,5 @@ echo $pokemon_name
 
 echo "a"
 ## This will print nothing. This is GitHub specific syntax
-echo "::set-output name=pokemon_name::$pokemon_name"()
+echo "::set-output name=pokemon_name::$pokemon_name"
 echo "b"
