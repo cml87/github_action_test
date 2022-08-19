@@ -11,7 +11,7 @@ jobs:
     
       - name: Run the custom action, get Pokemon name
         uses: ./ # Uses an action in the root directory
-        id: pokemon
+        id: pokemon  # ?
         with:
           pokemon_id: 150
     
